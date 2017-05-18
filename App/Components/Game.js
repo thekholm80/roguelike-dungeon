@@ -1,14 +1,8 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-//const Generate = require('../Utilities/generateMap');
 const loadCanvas = require('../Utilities/loadCanvas');
 
 class Game extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     loadCanvas();
   }

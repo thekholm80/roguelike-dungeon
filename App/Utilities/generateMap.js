@@ -31,14 +31,14 @@ const Game = {
 
     digger.create(diggerCallback.bind(this));
 
-    this.generateHealth(freeCells);
+    this.addHealth(freeCells);
     this.addPlayer(freeCells);
     this.addMobs(freeCells, dungeonLevel);
     this.addWeapon(freeCells, dungeonLevel);
     this.addDoor();
   },
 
-  generateHealth: function (freeCells) {
+  addHealth: function (freeCells) {
 
     for (let i = 0; i < 40; i++) {
       const index = Math.floor(ROT.RNG.getUniform() * freeCells.length);

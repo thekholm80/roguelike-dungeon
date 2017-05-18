@@ -135,7 +135,6 @@ module.exports = {
     sprite.src = eye;
   },
 
-
   /***********************************
   *
   *         Hero & Health

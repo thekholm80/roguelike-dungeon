@@ -3,7 +3,7 @@ const MobLoader = require('./mobLoader');
 function fight(location, player, map, context) {
   const mob = player.currentFoe;
   const boss = ['boss1', 'boss2', 'boss3', 'boss4'];
-  //debugger;
+
   if (mob) {
     if (mob.location === location) {
       hit(player, map, context);

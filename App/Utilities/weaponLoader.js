@@ -3,8 +3,7 @@ module.exports = {
   equip: {
     displayName: '',
     name: '',
-    damage: 0,
-    loader: false
+    damage: 0
   },
 
   loadWeapon: function (weapon, context) {

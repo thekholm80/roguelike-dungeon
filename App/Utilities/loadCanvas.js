@@ -62,13 +62,6 @@ function loadGameUI(context) {
   context.fillStyle = 'blue';
   context.fillRect(460, 71, mobHealthPercent, 28);
 
-  // Bar Numbers
-//  if (mobHealth > 0) {
-//    context.fillStyle = 'black';
-//    context.font = '20px "Special Elite"';
-//    context.fillText(mobHealth + ' / ' + mobMaxHealth, 590, 92);
-//  }
-
   /*****************************************
   *
   *               Health
@@ -88,10 +81,6 @@ function loadGameUI(context) {
   context.fillStyle = 'red';
   context.fillRect(460, 166, health, 28);
 
-  // Bar Numbers
-  //context.fillStyle = 'black';
-  //context.font = '20px "Special Elite"';
-  //context.fillText(player.health + ' / ' + player.maxHealth, 585, 187);
   /*****************************************
   *
   *               Experience
@@ -110,10 +99,11 @@ function loadGameUI(context) {
   context.fillStyle = 'green';
   context.fillRect(460, 266, experience, 28);
 
-  // Bar Numbers
-  //context.fillStyle = 'black';
-  //context.font = '20px "Special Elite"';
-  //context.fillText(player.experience + ' / ' + player.nextLevel, 600, 287);
+  /*****************************************
+  *
+  *             Equip / Level
+  *
+  ******************************************/
 
   // Level
   context.fillStyle = 'black';
