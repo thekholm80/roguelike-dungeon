@@ -1,0 +1,152 @@
+/*****************************
+*
+* variables
+*
+*****************************/
+
+ $mobile-width: 425px;
+ $tablet-width: 768px;
+ $desktop-width: 1024px;
+
+ $title-font: 'Press Start 2P', cursive;
+ $text-font: 'Special Elite', cursive;
+
+/*****************************
+*
+* Mixins
+*
+*****************************/
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$mobile-width + 1}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+/*******************************
+*
+* Elements
+*
+*******************************/
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/********************************
+*
+* App.js
+*
+*********************************/
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FourOhFour {
+  font-size: 4vw;
+  font-weight: bold;
+  color: red;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/*********************************
+*
+* Home.js
+*
+**********************************/
+
+.home-screen {
+  border: 1px solid black;
+
+  @include mobile {
+    width: 100vw;
+  }
+
+  @include tablet {
+    width: 95vw;
+  }
+
+  @include desktop {
+    width: 80vw;
+  }
+}
+
+.header {
+  flex-grow: 1;
+
+  margin: 1vw;
+
+  font-size: 4vw;
+  font-weight: bold;
+  font-family: $title-font;
+  text-align: center;
+}
+
+.home-body {
+  flex-grow: 2;
+
+  margin: 4vw 1vw;
+
+  font-size: 2vw;
+  font-weight: 300;
+  font-family: $text-font;
+  text-align: center;
+}
+
+.home-button-row {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.home-button {
+  padding: 5px 5px 1px 5px;
+  margin-bottom: 0.5vw;
+
+  font-family: $text-font;
+  font-size: 1.5vw;
+  font-weight: 250;
+
+  cursor: pointer;
+
+  border: 1px solid black;
+}
+
+.home-button:hover {
+  background-color: lightgray;
+}
+
+/*****************************
+*
+* Game.js
+*
+******************************/
+
+.game-display {
+  font-family: $text-font;
+}
