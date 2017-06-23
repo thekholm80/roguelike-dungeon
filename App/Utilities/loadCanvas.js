@@ -226,16 +226,20 @@ function Move(context, keyCode) {
   let currentLocation = player.x + ',' + player.y;
   let newLocation = '';
 
-  switch (keyCode) {
+  switch (keyCode) {  
+    case 65:  
     case 37:
      newLocation = (player.x - 1) + ',' + player.y;
      break;
+    case 87:
     case 38:
       newLocation = player.x + ',' + (player.y - 1);
       break;
+    case 68:
     case 39:
       newLocation = (player.x + 1) + ',' + player.y;
       break;
+    case 83:
     case 40:
       newLocation =  player.x + ',' + (player.y + 1);
       break;
