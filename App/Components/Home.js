@@ -9,7 +9,7 @@ function Home() {
         The Cluckening
       </div>
       <div className='home-body'>
-        <p>Use your arrow keys to navigate through the world.</p>
+        <p>Use your arrow keys or WASD to navigate through the world.</p>
         <p>Kill the bad guys, grab some loot.</p>
         <p>Show them they're clucking with the wrong chicken.</p>
       </div>
